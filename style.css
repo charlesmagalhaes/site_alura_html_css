@@ -111,9 +111,23 @@ form label, form legend {
     width: 50%;
 }
 
-.submit {
+.enviar {
 /*    margin: 0 auto;*/
-    width: 56%;
+    width: 40%;
+    padding: 15px 0;
+    background: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.enviar:hover {
+    background: darkorange;
+    transform: scale(1.2);
 }
 
 .checkbox {

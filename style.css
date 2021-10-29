@@ -64,7 +64,7 @@ nav a:hover {
 }
 
 .produtos li:hover h2 {
-    font-size: 34px;
+    font-size: 32px;
 }
 
 .produtos h2 {
@@ -238,11 +238,58 @@ td, th {
 
 .imagem-beneficios {
     width: 60%;
+    opacity: 1;
+    transition: 400ms;
+    box-shadow: 10px 10px 10px #000000;
+}
+
+.imagem-beneficios:hover {
+    opacity: 0.3;
 }
 
 .video {
     width: 560px;
     margin: 2em auto;
-
 }
+
+@media screen and (max-width: 480px) {
+        .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+       width: auto;
+         }
+       h1 {
+           text-align: center;
+       }
+
+    .principal {
+        margin: 20px;
+    }
+
+    .video {
+        margin: 20px;
+    }
+       nav {
+           position: static;
+       }
+       .lista-beneficios, .imagem-beneficios {
+           width: 100%;
+       }
+        header {
+            display: block;
+       }
+
+        .produtos {
+            width: auto;
+        }
+        .produtos li {
+            margin: 30px;
+            width: 80%;
+        }
+
+        .formulario {
+            width: auto;
+            margin: 10px;
+        }
+
+
+   }
 
